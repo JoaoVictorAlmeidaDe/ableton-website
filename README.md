@@ -11,5 +11,17 @@ Website inspirado no layout da Ableton.
 
 🔗 Live Demo: https://github.com/JoaoVictorAlmeidaDe/ableton-website
 
+## Estrutura
+
+├── indexAbleton.html
+├── jobs.html
+├── Apprenticeships.html
+│
+├── _Ableton.css
+├── jobs.css
+├── Apprenticeships.css
+│
+└── _imagens
+
 ## Autor
 João Victor 
