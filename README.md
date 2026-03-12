@@ -9,7 +9,7 @@ Website inspirado no layout da Ableton.
 
 [![Watch the video](https://img.youtube.com/vi/iamcfWo4QCQ/maxresdefault.jpg)](https://youtu.be/iamcfWo4QCQ)
 
-🔗 Live Demo: https://joaovictoralmeidede.github.io/ableton-website
+🔗 Live Demo: https://github.com/JoaoVictorAlmeidaDe/ableton-website
 
 ## Autor
 João Victor 
