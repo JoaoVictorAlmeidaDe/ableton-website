@@ -13,6 +13,9 @@ Website inspirado no layout da Ableton.
 
 ## Estrutura
 
+```
+ableton-website
+│
 ├── indexAbleton.html
 ├── jobs.html
 ├── Apprenticeships.html
@@ -22,6 +25,7 @@ Website inspirado no layout da Ableton.
 ├── Apprenticeships.css
 │
 └── _imagens
+```
 
 ## Autor
 João Victor 
