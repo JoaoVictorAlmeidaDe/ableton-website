@@ -1,0 +1,525 @@
+@charset "UTF-8";
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 50% 50% rgba(255, 255, 255, 0.87);
+    border-radius: 2px 2px 2px white;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+main {
+    flex: 1;
+}
+
+
+#imagemInicial {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 80px auto 0 auto;
+    /* centraliza horizontalmente */
+}
+
+section#corpolincial {
+    background-color: lightblue;
+    max-width: 1160px;
+    padding: 2rem 1rem;
+}
+
+#interface {
+    max-width: 1200px;
+    /* largura máxima no desktop */
+    width: 100%;
+    /* ocupa toda a largura disponível até o máximo */
+    margin: 0 auto;
+    /* centraliza horizontalmente */
+    padding: 0 20px;
+    /* respiro nas laterais em telas menores */
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    #interface {
+        padding: 0 10px;
+    }
+
+    #menu {
+        padding: 0 10px;
+    }
+}
+
+/*  Menu  */
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+
+
+#menu h1 {
+    display: none;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0.7rem 18rem;
+    margin-left: 0;
+    left: 200px;
+}
+
+#menu li {
+    margin-right: 1rem;
+}
+
+#menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+/* Imagem inicial abaixo do menu */
+#imagemInicial {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    /* espaço para não ficar atrás do menu */
+}
+
+#imagemSecundaria {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    /* espaço para não ficar atrás do menu */
+}
+
+
+/* Texto */
+#corpoInicial {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#texto01 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+    padding: 6rem;
+    font-size: 21pt;
+    text-align: justify;
+    color: black;
+    font-weight: bold;
+}
+
+#texto02 {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1;
+    top: -76px;
+    text-align: justify;
+    font-size: 14pt;
+}
+
+#texto03 {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1;
+    top: 80px;
+    text-align: justify;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+#texto04 {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1;
+    top: 100px;
+    text-align: justify;
+    font-size: 14pt;
+}
+
+/*VIDEO 01 */
+#videoPrincipal {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 200px;
+    top: 210px;
+    width: 700px;
+    height: 400px;
+}
+
+#legenda-Video {
+    justify-content: center;
+    position: relative;
+    top: 200px;
+    left: 210px;
+}
+
+#texto05 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.2;
+    padding: 16rem;
+    font-size: 20pt;
+    text-align: justify;
+    color: black;
+    font-weight: bold;
+    right: 20px;
+
+}
+
+#texto06 {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.7;
+    top: -220px;
+    text-align: justify;
+    font-size: 13pt;
+}
+
+#imagemTercearia {
+    position: relative;
+    justify-content: left;
+    left: 150px;
+    width: 1100px;
+    height: 800px;
+}
+
+#texto07 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1;
+    padding: 6rem;
+    font-size: 22pt;
+    text-align: justify;
+    color: black;
+    font-weight: bold;
+    right: 20px;
+}
+
+#texto08 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 13pt;
+    text-align: justify;
+    color: black;
+    right: 6px;
+    top: -80px;
+    position: relative;
+}
+
+#imagemQuartearia {
+    padding: 20px;
+}
+
+#texto09 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 20pt;
+    text-align: justify;
+    color: black;
+    right: 6px;
+    top: 50px;
+    position: relative;
+    font-weight: bold;
+}
+
+#texto10 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 13pt;
+    text-align: justify;
+    color: black;
+    right: 6px;
+    top: 90px;
+    position: relative;
+}
+
+#texto11 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 13pt;
+    text-align: justify;
+    color: black;
+    right: 6px;
+    top: 130px;
+    position: relative;
+}
+
+#imagemQuintearia {
+    position: relative;
+    right: 100px;
+    left: -290px;
+    padding: 12rem;
+}
+
+#texto12 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1;
+    font-size: 17pt;
+    text-align: justify;
+    color: black;
+    left: 59px;
+    top: -90px;
+    position: relative;
+    font-weight: bold;
+
+}
+
+#texto13 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 11pt;
+    text-align: justify;
+    color: black;
+    left: 230px;
+    top: -60px;
+    position: relative;
+}
+
+#imagemSextearia {
+    position: relative;
+    margin: 0 auto;
+    top: 100px;
+    right: 200px;
+
+}
+
+#fundo01-roxo {
+    position: relative;
+    width: 500px;
+    height: 535px;
+    top: 100px;
+    right: 204px;
+}
+
+#texto14 {
+    position: relative;
+    width: 500px;
+    height: 535px;
+    top: -255px;
+    left: 120px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15pt;
+    text-align: justify;
+}
+
+#legendaTexto14 {
+    position: relative;
+    width: 500px;
+    height: 535px;
+    top: -700px;
+    left: 665px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15pt;
+    color: blue;
+    text-decoration: none;
+}
+
+footer {
+    background: #f7f7f7;
+    padding: 60px 8% 40px;
+    font-family: Arial, sans-serif;
+    color: #000;
+    position: relative;
+    top: -15rem;
+
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    font-size: 60px;
+    margin-bottom: 10px;
+    top: -8rem;
+    position: relative;
+    text-align: left;
+    left: 2rem;
+
+}
+
+.AbletonES {
+    position: relative;
+    top: -6rem;
+}
+
+.footer-column h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 18px;
+    color: #000;
+    position: relative;
+    top: -6rem;
+}
+
+.language-select {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.language-select select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    background: #eee;
+    font-size: 14px;
+
+}
+
+.idiomaPosicao {
+    position: relative;
+    right: 22rem;
+    top: 5rem;
+
+}
+
+.idiomaPosicao h4 {
+    position: relative;
+    right: 22rem;
+    top: 5rem;
+}
+
+.newsletter p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.newsletter-form {
+    display: flex;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    background: #eaeaea;
+    font-size: 14px;
+}
+
+.newsletter-form button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-bottom ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+}
+
+.footer-bottom .made-in {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.comunitES {
+    position: relative;
+    top: -3.5rem;
+}

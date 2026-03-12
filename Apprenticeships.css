@@ -1,0 +1,328 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    color: #111;
+    background: #ffffff;
+}
+
+/* Container principal: largura controlada e alinhada à esquerda */
+.site-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+
+/* O cartão/coluna do conteúdo */
+.content {
+    max-width: 760px;
+    /*largura do bloco de texto */
+    padding: 40px 40px 120px 120px;
+    /* espaçamento interno;*/
+    text-align: left;
+}
+
+
+h1 {
+    font-size: clamp(50px, 5vw, 64px);
+    margin: 0 0 12px 0;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    position: relative;
+    right: 8rem;
+    margin-top: 10rem;
+}
+
+h2 {
+    font-size: clamp(18px, 2.4vw, 26px);
+    margin: 0 0 18px 0;
+    font-weight: 600;
+    color: #222;
+    right: 8rem;
+    position: relative;
+    text-align: center;
+    left: 15rem;
+}
+
+
+p.lead {
+    position: relative;
+    color: #222;
+    line-height: 1.7;
+    margin: 0 0 36px 0;
+    font-size: 15px;
+    max-width: 640px;
+    right: 8rem;
+    text-align: justify;
+    left: 15rem;
+}
+
+
+/* Imagem abaixo do texto */
+.hero-image {
+    position: relative;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.03);
+    right: 8rem;
+    left: 15rem;
+}
+
+
+/* Responsividade: reduz o padding e centraliza em telas pequenas */
+h1 {
+    font-size: 34pt;
+    margin-bottom: 2rem;
+    text-align: center;
+    left: 15rem;
+}
+
+.texto012 {
+    position: relative;
+    color: #222;
+    line-height: 1.7;
+    margin: 0 0 2px 0;
+    font-size: 15px;
+    max-width: 640px;
+    right: 8rem;
+    top: 30px;
+    text-align: justify;
+    left: 15rem;
+}
+
+.texto013 {
+    position: relative;
+    color: #222;
+    line-height: 1.7;
+    margin: 0 0 2px 0;
+    font-size: 15px;
+    max-width: 640px;
+    right: 8rem;
+    top: 50px;
+    text-align: justify;
+    left: 15rem;
+}
+
+.texto013:hover {
+    text-decoration: none;
+}
+
+.imagemFinal {
+    position: relative;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.03);
+    right: 8rem;
+    left: 15rem;
+    top: 80px;
+}
+
+@media (max-width: 600px) {
+    #interface {
+        padding: 0 10px;
+    }
+
+    #menu {
+        padding: 0 10px;
+    }
+}
+
+/*  Menu  */
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+
+#menu h1 {
+    display: none;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0.7rem 18rem;
+    margin-left: 0;
+    left: 200px;
+}
+
+#menu li {
+    margin-right: 1rem;
+}
+
+#menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER/ROTAPÉ */
+footer {
+    background: #f7f7f7;
+    padding: 60px 8% 40px;
+    font-family: Arial, sans-serif;
+    color: #000;
+    position: relative;
+    margin-top: 12rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    font-size: 60px;
+    margin-bottom: 10px;
+    top: -8rem;
+    position: relative;
+    text-align: left;
+    left: 2rem;
+
+}
+
+.AbletonES {
+    position: relative;
+    top: -6rem;
+}
+
+.footer-column h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 18px;
+    color: #000;
+    position: relative;
+    top: -6rem;
+}
+
+.language-select {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.language-select select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    background: #eee;
+    font-size: 14px;
+
+}
+
+.idiomaPosicao {
+    position: relative;
+    right: 22rem;
+    top: 5rem;
+
+}
+
+.idiomaPosicao h4 {
+    position: relative;
+    right: 22rem;
+    top: 5rem;
+}
+
+.newsletter p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.newsletter-form {
+    display: flex;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    background: #eaeaea;
+    font-size: 14px;
+}
+
+.newsletter-form button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-bottom ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+}
+
+.footer-bottom .made-in {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.comunitES {
+    position: relative;
+    top: -3.5rem;
+}
